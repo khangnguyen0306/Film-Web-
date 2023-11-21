@@ -1,0 +1,126 @@
+.overlay {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .popup {
+        height: 100%vh;
+        padding: 5px;
+        background: #fff;
+        border-radius: 5px;
+        width: 50%;
+        position: relative;
+        transition: all 5s ease-in-out;
+
+        img {
+            width: 100%;
+            height: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 35px;
+            margin: 20px 0;
+        }
+
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 10px 15px;
+            transition: all 200ms;
+            font-size: 20px;
+            text-decoration: none;
+            color: #f01010;
+            border-radius: 3px;
+
+        }
+
+
+
+
+
+        .close:hover {
+            color: #f1efef;
+            background-color: #c32828;
+        }
+
+        .content {
+            max-height: 30%;
+            overflow: auto;
+            padding: 0px 20px 30px 20px;
+            text-align: justify;
+        }
+
+    }
+
+
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-filmlist {
+    color: #fff;
+    margin: 20px 30px 0 0;
+    font-family: montserrat,sans-serif;
+
+    h3 {
+        margin: 20vh 0 20px 20px;
+        display: block;
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    span {
+        display: block;
+        color: #949cb0;
+        border-bottom: 0.5px solid grey;
+        margin: 20px 0 0 20px;
+        padding-bottom: 30px;
+    }
+}
+
+.header-filmlist2 {
+    color: black;
+    font-family: montserrat,sans-serif;
+    position: absolute;
+    right: 2%;
+    margin-top: 20px;
+    h3 {
+        margin: 10vh 0 0 0;
+        display: block;
+        line-height: 1.2;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    span {
+        display: block;
+        color: #949cb0;
+        border-bottom: 0.5px solid grey;
+        margin: 20px 0 0 20px;
+        padding-bottom: 30px;
+    }
+   
+}
+.container-films-list {
+    background-color: rgb(19, 23, 34);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+.d-flex {
+    padding-right: 0%;
+  
+  }
+  
+  
+  .logo {
+    width: 80px;
+    height: 70px;
+  }
+  
+  .brand {
+    padding: 0 4.5%;
+  }
+  
+  .navbar-nav {
+    --bs-navbar-nav-link-padding-x: 1rem;
+    --bs-emphasis-color-rgb: yellow;
+  
+    .active {
+      position: relative;
+    }
+  
+    .active::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      /* Adjust this value to control the horizontal position */
+      transform: translateX(-50%);
+      width: 50%;
+      /* Adjust this value to limit the length of the border */
+      border-bottom: 3px solid rgb(220, 184, 117);
+    }
+  }
+  
+  
+  
+  /* Add hover effect to buttons with the custom-button class */
+  .btn {
+    background-color: black;
+    color: azure;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+  
+    .btn-primary {
+      --bs-btn-bg: black;
+    }
+  }
+  
+  .fixed-header {
+    font-family: 'Roboto Slab';
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Set the background color to black */
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+  }
+  
+  
+  
+  .custom-dropdown .dropdown-menu {
+    display: none;
+   
+  }
+  .custom-dropdown{
+    cursor: pointer;
+    i{
+      font-size: 19px;
+    
+    }
+    .btnhead{
+      background-color: white ;
+      
+    }
+    .dropdown-menu{
+      .dropdown-item{
+        background-color: white ;
+      }
+    }
+  }
+  .custom-dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

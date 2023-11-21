@@ -1,0 +1,273 @@
+.fullscreen-login-container {
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  height: 100vh;
+
+  /* Chiều rộng full màn hình */
+  width: 100vw;
+
+  /* Không lặp lại ảnh */
+  background-repeat: no-repeat;
+
+  /* Ảnh không scroll cùng trang */
+  background-attachment: fixed;
+
+  /* Ảnh chiếm toàn bộ container */
+  background-size: cover;
+}
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+.login__textBox {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+  border-radius: 22px;
+  width: 20vw;
+  color: #fff;
+  border: 0.5px solid rgba(255, 255, 255, 0.0);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+
+  &::placeholder {
+    color: rgb(250, 245, 236);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0.5px solid white;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 0.5px solid white;
+    outline: none;
+    transition: 0.3s;
+  }
+
+
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  color: white;
+}
+
+.login__btn {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: none;
+  color: black;
+  background-color: rgb(220, 167, 140);
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 20px 0;
+  border-radius: 22px;
+  width: 20vw;
+  transition: 0.35s;
+
+  &:hover {
+    background-color: rgb(226, 189, 171);
+    transition: 0.35s;
+  }
+}
+
+.login__google {}
+
+.register-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: 0.35s;
+}
+
+.close-button {
+  position: absolute;
+  top: 100px;
+  right: 35%;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  color: white;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.login div {
+  margin-top: 7px;
+}
+
+.register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: rgba(234, 234, 234);
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.register__textBox {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.0);
+  transition: 0.35s;
+
+  &::placeholder {
+    font-size: 15px;
+  }
+
+  &:focus {
+    border: 0.5px solid grey;
+    outline: none;
+  }
+}
+
+.register__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(227, 54, 54);
+  display: block;
+  width: 22vh;
+  border-radius: 25px;
+  transition: 0.35s;
+
+  &:hover {
+    background-color: rgb(184, 41, 41);
+    transition: 0.35s;
+  }
+
+}
+
+.register__google {
+  background-color: #4285f4;
+  transition: 0.35s;
+
+  &:hover {
+    background-color: #0a52c6;
+    transition: 0.35s;
+  }
+}
+
+.register div {
+  margin-top: 7px;
+}
+
+
+
+.reset__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  justify-content: center;
+  border-radius: 8px;
+
+}
+
+.reset__textBox {
+
+  font-size: 18px;
+  border-radius: 10px;
+
+}
+
+.reset__btn {
+  display: block;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: green;
+  width: 22vw;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 10px;
+}
+
+
+.reset {
+  display: flex;
+  width: fit-content;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 30px;
+}
+
+.dashboard__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.dashboard div {
+  margin-top: 7px;
+}
