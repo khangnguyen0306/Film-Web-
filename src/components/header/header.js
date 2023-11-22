@@ -110,11 +110,7 @@ function Header(props) {
                 )
                 }
               </Nav>
-              <Box display="flex" alignItems="center" margin="20px 0">
-                <Button color="inherit" onClick={toggleDarkMode}>
-                  {darkMode ? 'Light Mode' : 'Dark Mode'}
-                </Button>
-              </Box>
+              
 
 
             </Navbar.Collapse>
